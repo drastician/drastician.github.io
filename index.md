@@ -16,11 +16,9 @@ I’m especially interested in:
 
 Right now I’m:
 - Exploring how AI can support research and discovery in large collections
-- 
 
 ## Find me elsewhere
 
 - [GitHub](https://github.com/drastician)
 - [LinkedIn](https://www.linkedin.com/in/richardnaples)
 - [Bsky](https://bsky.app/profile/drastician.bsky.social)
-- Email: yourname@example.com
