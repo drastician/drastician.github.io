@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>drastician | Tools & Projects</title>
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --text-color: #212529;
+      --text-muted: #6c757d;
+      --border-color: #e9ecef;
+      --accent-color: #0d6efd;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card-bg);
+      padding: 1.5rem 2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      margin-bottom: 2rem;
+      gap: 1.5rem;
+    }
+
+    .header-text h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+
+    .header-text p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    /* GIF Styling */
+    .header-gif {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--border-color);
+      flex-shrink: 0;
+    }
+
+    /* Main Tool Card */
+    .tool-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .tool-header {
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+      background: #fafbfc;
+    }
+
+    .tool-header h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .tool-header p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Streamlit Embed Container */
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      background: #ffffff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .header-gif {
+        width: 80px;
+        height: 80px;
+      }
+      .iframe-container {
+        height: 950px; /* Give extra vertical space for mobile layout */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header with Title and your GIF -->
+    <header>
+      <div class="header-text">
+        <h1>drastician</h1>
+        <p>Digital repositories, metadata tools, and identifier resolution utilities.</p>
+      </div>
+      <!-- GIF Display -->
+      <img 
+        src="https://64.media.tumblr.com/05a200f2490b8b4f0a31b30dbb2d9d6a/tumblr_n2njy7RWTW1rn3gulo1_500.gifv" 
+        alt="Accent GIF" 
+        class="header-gif" 
+      />
+    </header>
+
+    <!-- Embedded Tool Section -->
+    <main class="tool-card">
+      <div class="tool-header">
+        <h2>🔗 ARK & Persistent Identifier Resolution Tracer</h2>
+        <p>Inspect redirect paths, HTTP status codes, and registered N2T metadata in real time.</p>
+      </div>
+      <div class="iframe-container">
+        <!-- Embedded Live Streamlit App -->
+        <iframe 
+          src="https://ark-tracer-ecgycjmezww7ouczmeqvno.streamlit.app/?embed=true" 
+          title="ARK Resolution Tracer">
+        </iframe>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
