@@ -24,13 +24,13 @@ repository               : "drastician/drastician.github.io"
 author:
   # Biographic information
   avatar           : "me_neon copy.jpg"
-  name             : "Your Sidebar Name"
+  name             : "Richard Naples"
   pronouns         : "he/him"  
   bio              : "Data doula"
   location         : "DC"
   employer         : "Smithsonian"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "naplesr@si.edu" 
 
   # Academic websites
   academia         : # URL
