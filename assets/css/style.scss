@@ -1,0 +1,20 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom global colors
+h1, h2, h3 {
+  color: #23395B; /* Dark navy headers */
+}
+
+a {
+  color: #E3E981; /* Custom link accent */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #FFF9EC;
+  margin: 2em 0;
+}
